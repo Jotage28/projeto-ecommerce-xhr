@@ -1,0 +1,36 @@
+Assunto: Repositório GitHub do Projeto de Requisição Assíncrona
+
+Prezada equipe,
+
+O projeto será desenvolvido de forma colaborativa via GitHub. Seguem abaixo as instruções para clonar o repositório e participar:
+
+🔗 Link do Repositório:
+https://github.com/Jotage28/projeto-ecommerce-xhr
+
+Passos para clonar o projeto:
+
+1- Instale o Git (caso não tenha): https://git-scm.com/downloads
+
+2 - Abra o terminal (cmd, bash, etc.).
+
+3 - Escolha uma pasta no seu computador.
+
+4 - Digite o comando: git clone https://github.com/empresa/projeto-ecommerce.git
+
+5- Acesse a pasta do projeto:cd projeto-ecommerce
+
+6 - Após implementar, faça commit: git add .
+git commit -m "Implementação da funcionalidade X"
+
+7 - Envie as alterações: git push origin minha-feature
+
+8 - Abra um Pull Request (PR) para revisão.
+
+
+Em caso de dúvidas, podemos agendar um alinhamento.
+
+Atenciosamente,
+João Gabriel
+
+
+
