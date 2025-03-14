@@ -1,0 +1,43 @@
+Assunto: Implementação de Requisição Assíncrona com XMLHttpRequest
+
+Prezada equipe,
+
+Gostaria de informar os detalhes sobre o processamento assíncrono de dados que será implementado na página principal do e-commerce, utilizando o objeto XMLHttpRequest para realizar requisições às APIs REST.
+
+Abaixo, seguem as etapas do fluxo completo:
+
+1. Ação do Usuário: Ao interagir com um botão (ex.: "Adicionar ao Carrinho"), o sistema disparará uma função JavaScript.
+
+2. Criação da Requisição: A função criará um objeto XMLHttpRequest via const xhr = new XMLHttpRequest();.
+
+3. Configuração: Definiremos o método e o endpoint com xhr.open('GET', 'https://api.example.com/produtos');.
+
+4. Envio da Requisição: Enviaremos a requisição ao servidor com xhr.send();.
+
+5. Recebimento da Resposta: O servidor retornará os dados (ex.: JSON com detalhes do produto).
+
+6. Processamento da Resposta: Utilizaremos xhr.onload para processar a resposta, manipulando o DOM para exibir as informações ao usuário.
+
+7. Tratamento de Erros: Caso ocorra falha na requisição, o xhr.onerror será acionado para exibir mensagens de erro ao usuário.
+8. Exemplo de Estrutura Básica:
+
+const xhr = new XMLHttpRequest();
+xhr.open('GET', 'https://api.example.com/produtos');
+xhr.onload = function() {
+  if (xhr.status === 200) {
+    const data = JSON.parse(xhr.responseText);
+    console.log(data);
+    // Atualização da interface com dados recebidos
+  } else {
+    console.error('Erro na requisição');
+  }
+};
+xhr.onerror = function() {
+  console.error('Erro de conexão');
+};
+xhr.send();
+
+Caso tenham dúvidas ou sugestões, estou à disposição.
+
+Atenciosamente,
+João Gabriel
